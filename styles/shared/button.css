@@ -1,0 +1,26 @@
+.button {
+  padding: 12px 24px;
+  border-radius: 6px;
+  border: 1px solid;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+
+.default {
+  border-color: var(--black);
+  color: var(--black);
+  background-color: transparent;
+}
+
+.primary {
+  border-color: var(--green-jussi);
+  color: var(--black);
+  background-color: var(--green-jussi);
+}
+
+.secondary {
+  border-color: var(--pink-jussi);
+  color: var(--pink-jussi);
+  background-color: transparent;
+  border-radius: 24px;
+}

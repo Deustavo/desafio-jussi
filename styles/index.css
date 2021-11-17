@@ -1,0 +1,12 @@
+/* components */
+@import "./shared/button.css";
+@import "./shared/card.css";
+
+
+/* pages */
+@import "./pages/home/index.css";
+
+
+/* style guide */
+@import "./styleGuide.css";
+@import "./global.css";
