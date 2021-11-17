@@ -1,5 +1,7 @@
 export default function LogoBar() {
   return<>
-    <h2>LogoBar</h2>
+    <section id="logo-bar">
+      <span className="paragraph">Nossas principais lojas VTEX</span>
+    </section>
   </>;
 }
