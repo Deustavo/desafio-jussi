@@ -22,6 +22,10 @@
   color: var(--dark-grey);
 }
 
+.white {
+  color: var(--white);
+}
+
 
 /* text */
 .extra-large {
@@ -47,6 +51,15 @@
   font-weight: 500;
   font-size: 32px;
   line-height: 38.4px;
+}
+
+.email {
+  font-family: 'Barlow', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 24px;
+  text-align: center;
 }
 
 .large {

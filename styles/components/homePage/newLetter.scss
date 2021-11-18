@@ -1,0 +1,13 @@
+#new-letter {
+  background-color: var(--black);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 136px 24vw;
+  text-align: center;
+
+  input {
+    margin: 24px 0px 0px 0px;
+  }
+}

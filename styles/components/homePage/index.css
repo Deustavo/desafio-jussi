@@ -1,6 +1,6 @@
-@import "./contactInfo.css";
+@import "./contactInfo.scss";
 @import "./heroBanner.scss";
 @import "./jussiSession.scss";
 @import "./logoBar.css";
-@import "./newLetter.css";
+@import "./newLetter.scss";
 @import "./ourSolutions.css";

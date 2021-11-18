@@ -1,0 +1,14 @@
+#contact-info {
+  background-color: var(--pink-jussi);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 136px 24vw;
+  text-align: center;
+
+  .paragraph {
+    margin: 24px 0px 8px 0px;
+    word-break: break-all;
+  }
+}
