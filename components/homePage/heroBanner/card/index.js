@@ -7,15 +7,20 @@ import Image from "next/image";
  * @param {string} text 
  * @returns 
  */
-export default function Card({
-  className,
-  imageSource,
-  text
-}) {
+export default function Card({ data }) {
+
+  /**
+   * Verifica de existe o valor data.imageSource
+   * @returns {Boolean} 
+   */
+  const haveImageSource = () => {
+    return data && data.imageSource ? true : false
+  };
+
   return<>
-    <div className={`card-container drop-shadow image ${className}`}>
-      <Image src={imageSource} alt={text} width={180} height={190} />
-      <Button className="secondary" text={text} />
+    <div className={`card-container drop-shadow image ${data?.className}`}>
+      {haveImageSource()  && <Image src={data?.imageSource} alt={data?.text} width={180} height={190} />}
+      <Button className="secondary" text={data?.text} />
     </div>
   </>;
 }

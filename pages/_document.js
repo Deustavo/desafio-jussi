@@ -16,6 +16,9 @@ class MyDocument extends Document {
           <link rel="shortcut icon" href="https://jussi.com.br/br.com.jussi/img/favicon.ico" />
           
           <meta property="og:locale" content="pt_BR" />
+          <meta property="og:url" content="https://desafio-jussi.vercel.app/" />
+          <meta property="og:title" content="Jüssi | The Business Agency." />
+          <meta property="og:site_name" content="Jüssi" />
         </Head>
         <Header />
         <body>

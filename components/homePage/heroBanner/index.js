@@ -1,7 +1,15 @@
+import { useEffect, useState } from "react";
 import Button from "../../shared/button";
 import Card from "./card";
+import { cardsData } from "../../../mock/homePage/cards";
 
 export default function HeroBanner() {
+  const [cards, setCards] = useState([]);
+
+  useEffect(() => {
+    setCards(cardsData);
+  }, []);
+
   return<>
     <section id="hero-banner" className="padding-page">
       <div className="container-1">
@@ -10,21 +18,10 @@ export default function HeroBanner() {
         <Button text="Veja nossas soluções"/>
       </div>
       <div className="container-2">
-        <Card
-          className="floating-card"
-          imageSource="/images/homePage/heroBanner/foodMixer.png"
-          text="Comprar em 12x"
-        />
+        <Card data={cards[0]} />
         <div className="container-cards">
-          <Card
-            imageSource="/images/homePage/heroBanner/refrigerator.png"
-            text="Mais Detalhes"
-          />
-          <Card
-            className="margin-top-card"
-            imageSource="/images/homePage/heroBanner/blackLabel.png"
-            text="Adicionar à sacola"
-          />
+          <Card data={cards[1]} />
+          <Card data={cards[2]} />
         </div>
       </div>
     </section>

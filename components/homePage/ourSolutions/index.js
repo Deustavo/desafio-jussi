@@ -1,15 +1,13 @@
 import { useEffect, useState } from "react";
 import Box from "./box";
-import { boxesData } from "../../../mock/homePage/mock";
+import { boxesData } from "../../../mock/homePage/box";
 
 export default function OurSolutions() {
   const [boxes, setBoxes] = useState([]);
 
   useEffect(() => {
-    console.log(boxesData);
     setBoxes(boxesData);
   }, []);
-  
 
   return<>
     <section id="our-solutions" className="padding-page">
