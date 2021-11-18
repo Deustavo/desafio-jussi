@@ -4,6 +4,10 @@
   text-decoration: inherit;
   color: inherit;
   transition: ease-in-out all 300ms;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 html {
