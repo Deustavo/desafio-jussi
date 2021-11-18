@@ -4,6 +4,12 @@
   border: 1px solid;
   box-sizing: border-box;
   white-space: nowrap;
+  transition: 300ms ease-in-out all;
+
+  &:hover {
+    cursor: pointer;
+    filter: invert(1);
+  }
 }
 
 .default {

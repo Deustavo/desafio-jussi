@@ -1,0 +1,14 @@
+#our-solutions {
+  background-color: var(--white);
+}
+
+#our-solutions .large {
+  margin-bottom: 24px;
+}
+
+#our-solutions .container-boxes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}

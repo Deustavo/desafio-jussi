@@ -1,9 +1,9 @@
-import HeroBanner from "../components/pages/home/heroBanner";
-import LogoBar from "../components/pages/home/logoBar";
-import OurSolutions from "../components/pages/home/ourSolutions";
-import JussiSession from "../components/pages/home/jussiSession";
-import ContactInfo from "../components/pages/home/contactInfo";
-import NewLetter from "../components/pages/home/newLetter";
+import HeroBanner from "../components/homePage/heroBanner";
+import LogoBar from "../components/homePage/logoBar";
+import OurSolutions from "../components/homePage/ourSolutions";
+import JussiSession from "../components/homePage/jussiSession";
+import ContactInfo from "../components/homePage/contactInfo";
+import NewLetter from "../components/homePage/newLetter";
 
 export default function Home() {
   return <>

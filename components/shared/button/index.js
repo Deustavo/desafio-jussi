@@ -1,9 +1,13 @@
 import { useEffect } from "react";
 
-export default function Button(props) {
-  let className = props?.className || "default";
-  let text = props?.text || "Botão";
-
+/**
+ * @param {string} className 
+ * @param {string} text
+ */
+export default function Button({
+  className = "default",
+  text = "Botão"
+}) {
   return <>
     <button className={`button paragraph ${className}`}>
       {text}

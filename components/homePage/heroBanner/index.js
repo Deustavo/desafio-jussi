@@ -1,5 +1,5 @@
-import Button from "../../../shared/button";
-import Card from "../../../shared/card";
+import Button from "../../shared/button";
+import Card from "./card";
 
 export default function HeroBanner() {
   return<>
@@ -10,10 +10,21 @@ export default function HeroBanner() {
         <Button text="Veja nossas soluções"/>
       </div>
       <div className="container-2">
-        <Card className="floating-card image-1" text="Comprar em 12x"/>
+        <Card
+          className="floating-card"
+          imageSource="/images/home/heroBanner/foodMixer.png"
+          text="Comprar em 12x"
+        />
         <div className="container-cards">
-          <Card className="image-2" text="Mais Detalhes"/>
-          <Card className="margin-top-card image-3" text="Adicionar à sacola"/>
+          <Card
+            imageSource="/images/home/heroBanner/refrigerator.png"
+            text="Mais Detalhes"
+          />
+          <Card
+            className="margin-top-card"
+            imageSource="/images/home/heroBanner/blackLabel.png"
+            text="Adicionar à sacola"
+          />
         </div>
       </div>
     </section>

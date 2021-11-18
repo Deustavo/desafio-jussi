@@ -9,6 +9,20 @@
 }
 
 
+/* colors tag */
+.green-jussi {
+  color: var(--green-jussi);
+}
+
+.pink-jussi {
+  color: var(--pink-jussi);
+}
+
+.dark-grey {
+  color: var(--dark-grey);
+}
+
+
 /* text */
 .extra-large {
   font-family: 'Barlow', sans-serif;
@@ -34,6 +48,14 @@
   font-size: 32px;
   line-height: 40px;
   text-transform: uppercase;
+}
+
+.small {
+  font-family: 'Barlow', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
 }
 
 
