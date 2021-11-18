@@ -1,7 +1,7 @@
 export const boxesData = [
   {
     id: 1,
-    imageSource: "/images/home/heroBanner/foodMixer.png",
+    imageSource: "/images/homePage/heroBanner/foodMixer.png",
     title: "Nome do produto #1",
     description: "Descrição do produto #1",
     features: [
@@ -22,7 +22,7 @@ export const boxesData = [
   },
   {
     id: 2,
-    imageSource: "/images/home/heroBanner/foodMixer.png",
+    imageSource: "/images/homePage/heroBanner/foodMixer.png",
     title: "Nome do produto #2",
     description: "Descrição do produto #2",
     features: [
@@ -43,7 +43,7 @@ export const boxesData = [
   },
   {
     id: 3,
-    imageSource: "/images/home/heroBanner/foodMixer.png",
+    imageSource: "/images/homePage/heroBanner/foodMixer.png",
     title: "Nome do produto #3",
     description: "Descrição do produto #3",
     features: [
@@ -64,7 +64,7 @@ export const boxesData = [
   },
   {
     id: 4,
-    imageSource: "/images/home/heroBanner/foodMixer.png",
+    imageSource: "/images/homePage/heroBanner/foodMixer.png",
     title: "Nome do produto #4",
     description: "Descrição do produto #4",
     features: [

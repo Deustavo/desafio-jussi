@@ -14,7 +14,7 @@ export default function OurSolutions() {
   return<>
     <section id="our-solutions" className="padding-page">
       <h2 className="large">
-        <span className="green-jussi">//</span>
+        <span className="green-jussi">&#47;&#47;</span>
         Nossas soluções
       </h2>
 

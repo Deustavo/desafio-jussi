@@ -41,6 +41,14 @@
   line-height: 24px;
 }
 
+.circle-avatar {
+  font-family: 'Barlow', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38.4px;
+}
+
 .large {
   font-family: 'Barlow', sans-serif;
   font-style: normal;

@@ -13,7 +13,7 @@ import Button from "../../../shared/button";
 export default function Box({ data }) {
   return<>
     <div className="container-box">
-      <div className="circle-image">P{data.id}</div>
+      <div className="circle-avatar">P{data.id}</div>
       <span className="paragraph">{data.title}</span>
       <span className="small pink-jussi">{data.description}</span>
       <ul>

@@ -12,17 +12,17 @@ export default function HeroBanner() {
       <div className="container-2">
         <Card
           className="floating-card"
-          imageSource="/images/home/heroBanner/foodMixer.png"
+          imageSource="/images/homePage/heroBanner/foodMixer.png"
           text="Comprar em 12x"
         />
         <div className="container-cards">
           <Card
-            imageSource="/images/home/heroBanner/refrigerator.png"
+            imageSource="/images/homePage/heroBanner/refrigerator.png"
             text="Mais Detalhes"
           />
           <Card
             className="margin-top-card"
-            imageSource="/images/home/heroBanner/blackLabel.png"
+            imageSource="/images/homePage/heroBanner/blackLabel.png"
             text="Adicionar à sacola"
           />
         </div>

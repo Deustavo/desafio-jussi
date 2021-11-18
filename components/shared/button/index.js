@@ -1,15 +1,18 @@
-import { useEffect } from "react";
-
 /**
- * @param {string} className 
- * @param {string} text
+ * @param {String} className 
+ * @param {String} text
+ * @param {Function} action
  */
 export default function Button({
   className = "default",
-  text = "Botão"
+  text = "Botão",
+  action = () => {},
 }) {
   return <>
-    <button className={`button paragraph ${className}`}>
+    <button
+      className={`button paragraph ${className}`}
+      onClick={() => action}
+    >
       {text}
     </button>
   </>;
