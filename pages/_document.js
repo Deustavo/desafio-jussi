@@ -8,9 +8,14 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <title>Jüssi | The Business Agency.</title>
+
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin={true} />
           <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;700&display=swap" rel="stylesheet" />
+          <link rel="shortcut icon" href="https://jussi.com.br/br.com.jussi/img/favicon.ico" />
+          
+          <meta property="og:locale" content="pt_BR" />
         </Head>
         <Header />
         <body>
