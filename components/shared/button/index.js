@@ -11,7 +11,7 @@ export default function Button({
   return <>
     <button
       className={`button paragraph ${className}`}
-      onClick={() => action}
+      onClick={() => action()}
     >
       {text}
     </button>

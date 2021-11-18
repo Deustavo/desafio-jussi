@@ -1,0 +1,30 @@
+#layout-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white);
+  width: 95vw;
+  z-index: 2;
+
+  position: fixed;
+
+  padding: 2vh 2vw;
+
+  .container-1 {
+    display: flex;
+    align-items: center;
+
+    a {
+      margin-left: 32px;
+    }
+  }
+
+  .container-2 {
+    display: flex;
+    align-items: center;
+
+    a {
+      margin: 0px 32px;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: inherit;
+  color: inherit;
+  transition: ease-in-out all 300ms;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a:hover {
+  color: var(--green-jussi);
+}
+
+.padding-page {
+  padding: 80px 10vw;
+}

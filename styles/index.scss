@@ -1,7 +1,10 @@
 /* components */
 @import "./components/box.scss";
 @import "./components/button.scss";
-@import "./components/card.css";
+@import "./components/card.scss";
+
+/* layout */
+@import "./components/layout/index.scss";
 
 
 /* pages */
@@ -10,4 +13,4 @@
 
 /* style guide */
 @import "./styleGuide.css";
-@import "./global.css";
+@import "./global.scss";
