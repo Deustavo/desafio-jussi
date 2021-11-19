@@ -11,4 +11,8 @@
     margin: 24px 0px 8px 0px;
     word-break: break-all;
   }
+  
+  @media only screen and (max-width: 1024px) {
+    padding: 136px 10vw;
+  }
 }

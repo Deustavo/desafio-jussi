@@ -2,13 +2,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--white);
-  width: 95vw;
-  z-index: 2;
-
   position: fixed;
-
   padding: 2vh 2vw;
+  width: 95vw;
+  background-color: var(--white);
+  border-bottom: 2px solid var(--gray);
+  z-index: 2;
 
   .container-1 {
     display: flex;
