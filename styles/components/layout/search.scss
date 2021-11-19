@@ -1,6 +1,6 @@
 .search-contianer {
   background: var(--white);
-  border: 1px solid black;
+  border: 2px solid var(--gray);
   box-sizing: border-box;
   border-radius: 24px;
   position: relative;
@@ -19,6 +19,6 @@
   }
 
   &:hover {
-    border: 1px solid var(--pink-jussi);
+    border: 2px solid var(--pink-jussi);
   }
 }
