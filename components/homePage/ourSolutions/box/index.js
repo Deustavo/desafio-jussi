@@ -19,7 +19,7 @@ export default function Box({ data }) {
       <ul>
         {
           data.features.map(feature =>
-            <li className="small dark-grey" key={feature.id}>{feature.name}</li>
+            <li className="small dark-gray" key={feature.id}>{feature.name}</li>
           )
         }
       </ul>
