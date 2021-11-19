@@ -45,7 +45,10 @@ export default function Header() {
         </Link>
         <Image src="/icons/shopping-cart.svg" alt="cart" height={24} width={24}/>
       </div>
-      <Hamburguer />
+      <div className="container-3">
+        <Image src="/icons/search.svg" alt="search" height={24} width={24}/>
+        <Hamburguer />
+      </div>
     </section>
   </>;
 }
