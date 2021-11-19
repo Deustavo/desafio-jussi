@@ -1,0 +1,21 @@
+#logo-bar {
+  padding: 0px 10vw;
+  background-color: var(--gray);
+
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  img, .title {
+    padding: 24px 0px !important;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .arrow {
+      color: var(--gray);
+      width: 100%;
+      height: 0px;
+    }
+  }
+}
