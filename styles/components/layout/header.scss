@@ -15,6 +15,10 @@
 
     a {
       margin-left: 32px;
+
+      &:nth-of-type(1) {
+        margin-left: 0px;
+      }
     }
   }
 
@@ -24,6 +28,21 @@
 
     a {
       margin: 0px 32px;
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    padding: 1vh 4vw;
+    width: 92vw;
+
+    .hide-mobile {
+      display: none;
+    }
+    
+    .container-1 {
+      img {
+        height: 24px !important;
+      }
     }
   }
 }

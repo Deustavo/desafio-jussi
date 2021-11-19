@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import Search from "./search";
+import Hamburguer from "./hamburguer";
 
 const hideHeader = () => {
   var prevScrollpos = window.pageYOffset;
@@ -31,19 +32,20 @@ export default function Header() {
           </a>
         </Link>
         <Link href="#our-solutions">
-          <a className="paragraph">Nossas soluções</a>
+          <a className="paragraph hide-mobile">Nossas soluções</a>
         </Link>
         <Link href="#jussi-session">
-          <a className="paragraph">Conheça a Jüssi</a>
+          <a className="paragraph hide-mobile">Conheça a Jüssi</a>
         </Link>
       </div>
-      <div className="container-2">
+      <div className="container-2 hide-mobile">
         <Search />
         <Link href="/">
           <a className="paragraph">Login</a>
         </Link>
         <Image src="/icons/shopping-cart.svg" alt="cart" height={24} width={24}/>
       </div>
+      <Hamburguer />
     </section>
   </>;
 }

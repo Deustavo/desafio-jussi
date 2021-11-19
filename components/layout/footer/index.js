@@ -9,8 +9,6 @@ export default function Footer() {
   useEffect(() => {
     setSocial(socialData);
   }, []);
-  
-  console.log(social);
 
   /**
    * Verifica de existe o valor social.imageSource
