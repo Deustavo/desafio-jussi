@@ -5,6 +5,9 @@ import Link from "next/link";
 import Search from "./search";
 import Hamburguer from "./hamburguer";
 
+/**
+ * Controla a animação de esconder e exibir o header 
+ */
 const hideHeader = () => {
   var prevScrollpos = window.pageYOffset;
   window.onscroll = function() {

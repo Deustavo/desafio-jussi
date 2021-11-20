@@ -1,33 +1,37 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
+import { useRouter } from "next/router";
 import Image from "next/image";
 import Link from "next/link";
+
 import { SearchContext } from "../../../../provider/search";
 import api from "../../../../services/api";
 
 export default function Search() {
-  const {search, setSearch} = React.useContext(SearchContext);
-  const [text, setText] = useState('');
-  
-  useEffect(() => {
-    console.log(search);
-  }, [])
+  const {setSearch} = React.useContext(SearchContext);
+  const [text, setText] = useState("");
+  const router = useRouter();
 
-  const setTextData = async (parametro) => {
-    setText(parametro);
-    // let response = await api.get(`people/?search=${parametro}`);
-    let response = {
-      data: parametro,
-      response: [{
-        id: 1,
-        nome: "Oswaldo"
-      }],
+  /**
+   * Atribui o valor pesquisado no input ao context
+   * @param {*} search 
+   */
+  const setTextData = async (search) => {
+    let response = [];
+    setText(search);
+
+    if (search !== "") {
+      let get = await api.get(`people/?search=${search}`);
+      response = get.data.results;
     }
 
-    setSearch(response);
+    return setSearch({
+      data: search,
+      response: response,
+    });
   };
 
   return<>
-    <label className="search-contianer" htmlFor="header-search">
+    <section className="search-contianer" htmlFor="header-search">
       <input className="paragraph" id="header-search" value={text} onChange={(e) => setTextData(e.target.value)} placeholder="Buscar"/>
       <Link href={"/search"}>
         <a className="link-icon">
@@ -35,6 +39,6 @@ export default function Search() {
         </a>
       </Link>
       <div className="dinamic-border-input"/>
-    </label>
+    </section>
   </>;
 }
