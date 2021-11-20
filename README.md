@@ -25,6 +25,8 @@ Desenvolver um e-commerce baseado em um [Figma](https://www.figma.com/file/O9AEe
   - A página principal está responsiva para versões mobile.
   - A API escolhida para consulta foi a de personagens de [Star Wars](https://swapi.dev/).
   - O valor retornado da API fica salvo em no context do projeto.
+  - Foram criados dados mockados para reduzir o tamanho das páginas e torna-lás dinamicas. 
+![screen](./public/images/readme/mock.png)
 <br /><br />
 
 ### Espero que tenha gostado do resultado 😀
