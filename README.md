@@ -1,34 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Desafio Jüssi
 
-## Getting Started
+![screen](./public/images/readme/banner.png)
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
+## Veja o projeto!
+Confira a plataforma hospedada [aqui](https://desafio-jussi.vercel.app/)<br />
+Caso deseje rodar o projeto em sua maquina, clone o projeto e rode os comandos
+```
+yarn
+```
+```
 yarn dev
 ```
+<br />
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Case
+Desenvolver um e-commerce baseado em um [Figma](https://www.figma.com/file/O9AEeYB6ZWyMTZzMZhvjaY/loja-vtex-jussi?node-id=0%3A1) que cumpra as seguintes promissas:
+  - Usar o React como biblioteca base do projeto;
+  - Usar alguma API pública de consulta para o campo de busca no header;
+  - Ao finalizar o projeto, publique no seu repositório no Github e nos envie a URL para acesso;
+<br /><br />
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Sobre a solução
+  - Foi escolhida a framework react [NextJS](https://nextjs.org/) para desenvolver a plataforma.
+  - A página principal está responsiva para versões mobile.
+  - A API escolhida para consulta foi a de personagens de [Star Wars](https://swapi.dev/).
+  - O valor retornado da API fica salvo em no context do projeto.
+  - Foram criados dados mockados para reduzir o tamanho das páginas e torna-lás dinamicas.<br />
+![screen](./public/images/readme/mock.png)
+<br /><br />
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### Espero que tenha gostado do resultado 😀
+Deustavo.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
