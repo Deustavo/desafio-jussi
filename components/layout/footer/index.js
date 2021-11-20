@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { socialData } from '../../../mock/layout/social';
+import { socialData } from '../../../services/mock/layout/social';
 
 export default function Footer() {
   const [social, setSocial] = useState([]);

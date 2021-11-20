@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 
 import Button from "../../shared/button";
 import Card from "./card";
-import { cardsData } from "../../../mock/homePage/cards";
+import { cardsData } from "../../../services/mock/homePage/cards";
 
 export default function HeroBanner() {
   const [cards, setCards] = useState([]);

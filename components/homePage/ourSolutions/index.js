@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Box from "./box";
-import { boxesData } from "../../../mock/homePage/box";
+import { boxesData } from "../../../services/mock/homePage/box";
 
 export default function OurSolutions() {
   const [boxes, setBoxes] = useState([]);
