@@ -1,4 +1,4 @@
-#layout-header {
+.layout-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,21 +9,52 @@
   border-bottom: 2px solid var(--gray);
   z-index: 2;
 
-  .container-1 {
+  &__container-left {
     display: flex;
     align-items: center;
 
     a {
       margin-left: 32px;
+
+      &:nth-of-type(1) {
+        margin-left: 0px;
+      }
     }
   }
 
-  .container-2 {
+  &__container-right {
     display: flex;
     align-items: center;
 
     a {
       margin: 0px 32px;
+    }
+  }
+
+  &__container-mobile {
+    display: none;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    padding: 1vh 4vw;
+    width: 92vw;
+
+    .hide-mobile {
+      display: none;
+    }
+    
+    &__container-left {
+      img {
+        height: 24px !important;
+      }
+    }
+    
+    &__container-mobile {
+      display: flex;
+
+      .hamburguer-label {
+        padding-left: 16px;
+      }
     }
   }
 }

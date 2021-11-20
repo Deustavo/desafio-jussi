@@ -1,8 +1,6 @@
 .search-contianer {
   background: var(--white);
-  border: 2px solid var(--gray);
   box-sizing: border-box;
-  border-radius: 24px;
   position: relative;
   padding: 2px 16px;
 
@@ -11,14 +9,52 @@
 
   .placeholder  {
     position: absolute;
+    z-index: 3;
+  }
+
+  .dinamic-border-input {
+    border: 1px solid var(--gray);
+    border-radius: 24px;
+    position: absolute;
+    margin: -16px;
+    width: 100%;
+    height: 100%;
   }
 
   input {
     border: none;
     padding: 6px 0px;
+    z-index: 2;
+
+    &::placeholder {
+      color: var(--pink-jussi);
+    }
+
+    &:focus,
+    &:not([value=""]){
+      &~ .placeholder {
+        display: none;
+      }
+
+      &~ .dinamic-border-input {
+        border: 1px solid var(--pink-jussi);
+      }
+    }
   }
 
   &:hover {
-    border: 2px solid var(--pink-jussi);
+    .dinamic-border-input {
+      border: 1px solid var(--pink-jussi);
+    }
+  }
+
+  
+  .link-icon {
+    margin: 0 !important;
+    z-index: 3;
+    transition: ease-in-out all 300ms;
+    &:hover {
+      filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(-400deg) brightness(119%) contrast(119%);
+    }
   }
 }

@@ -9,8 +9,6 @@ export default function Footer() {
   useEffect(() => {
     setSocial(socialData);
   }, []);
-  
-  console.log(social);
 
   /**
    * Verifica de existe o valor social.imageSource
@@ -21,11 +19,11 @@ export default function Footer() {
   };
 
   return<>
-    <section id="layout-footer">
-      <div className="container-1">
+    <section id="layout-footer" className="layout-footer">
+      <div className="layout-footer__container-left">
         <Image src="/images/layout/wpp-company.png" alt="search" height={28} width={144}/>
       </div>
-      <div className="container-2">
+      <div className="layout-footer__container-right">
         {social.map(s =>
           <Link key={s.id} href={s.link}> 
             <a>

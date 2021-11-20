@@ -1,10 +1,10 @@
-#layout-footer {
+.layout-footer {
   background-color: var(--black);
   padding: 2vh 10vw;
   display: flex;
   justify-content: space-between;
 
-  .container-2 {
+  &__container-right {
     a {
       margin-left: 16px;
 

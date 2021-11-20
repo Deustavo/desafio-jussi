@@ -1,0 +1,22 @@
+.search-page {
+  padding: 160px 10vw;
+
+  .large {
+    margin-bottom: 24px;
+  }
+
+  .container-result {
+    margin: 4px 0px 12px 0px;
+    display: flex;
+    transition: ease-in-out all 0ms;
+    cursor: pointer;
+
+    .result-name {
+      margin-left: 16px;
+    }
+
+    &:hover {
+      color: var(--green-jussi);
+    }
+  }
+}

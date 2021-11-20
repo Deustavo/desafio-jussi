@@ -7,8 +7,24 @@
   padding: 136px 24vw;
   text-align: center;
 
-  input {
-    margin: 24px 0px 0px 0px;
+  .input-container {
+    margin-top: 24px;
+    border-bottom: 1px solid var(--green-jussi);
+
+    input {
+      background-color: var(--black);
+      border: none;
+      color: var(--white);
+      width: 30vw;
+
+      &::placeholder {
+        color: var(--white);
+      }
+    }
+
+    button {
+      padding-right: 0px;
+    }
   }
 
   @media only screen and (max-width: 1024px) {

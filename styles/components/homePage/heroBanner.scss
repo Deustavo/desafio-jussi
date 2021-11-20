@@ -1,9 +1,9 @@
-#hero-banner {
+.hero-banner {
   background-color: var(--green-jussi);
   display: flex;
-  padding-top: 148px;
+  padding-top: 148px !important;
 
-  .container-1 {
+  &__container-left {
     width: 40vw;
 
     .paragraph {
@@ -11,7 +11,7 @@
     }
   }
 
-  .container-2 {
+  &__container-right {
     width: 40vw;
     position: relative;
   }
@@ -25,11 +25,11 @@
 
   
   @media only screen and (max-width: 1024px) {
-    .container-1 {
+    &__container-left {
       width: 100%;
     }
 
-    .container-2 {
+    &__container-right {
       display: none;
     }
   }

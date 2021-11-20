@@ -1,10 +1,10 @@
-#jussi-session {
+.jussi-session {
   background: linear-gradient(90deg, var(--white) 50%, var(--gray) 50%);
   
   display: flex;
   justify-content: space-between;
 
-  .container-1 {
+  &__container-left {
     width: 17vw;
 
     .paragraph {
@@ -14,11 +14,11 @@
 
 
   @media only screen and (max-width: 1200px) {
-    .container-1 {
+    &__container-left {
       width: 30vw;
     }
 
-    .container-2 {
+    &__container-right {
       align-items: stretch;
 
       span {
@@ -36,11 +36,11 @@
   @media only screen and (max-width: 768px) {
     background: var(--gray);
 
-    .container-1 {
+    &__container-left {
       width: 100%;
     }
 
-    .container-2 {
+    &__container-right {
       display: none;
     }
   }
