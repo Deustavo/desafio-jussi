@@ -1,6 +1,6 @@
 # Desafio Jüssi
 
-![screen](./public/readme/banner.png)
+![screen](./public/images/readme/banner.png)
 
 ## Veja o projeto!
 Confira a plataforma hospedada [aqui](https://desafio-jussi.vercel.app/)<br />
