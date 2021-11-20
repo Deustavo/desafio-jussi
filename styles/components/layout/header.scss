@@ -1,4 +1,4 @@
-#layout-header {
+.layout-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,7 +9,7 @@
   border-bottom: 2px solid var(--gray);
   z-index: 2;
 
-  .container-1 {
+  &__container-left {
     display: flex;
     align-items: center;
 
@@ -22,7 +22,7 @@
     }
   }
 
-  .container-2 {
+  &__container-right {
     display: flex;
     align-items: center;
 
@@ -31,7 +31,7 @@
     }
   }
 
-  .container-3 {
+  &__container-mobile {
     display: none;
   }
 
@@ -43,13 +43,13 @@
       display: none;
     }
     
-    .container-1 {
+    &__container-left {
       img {
         height: 24px !important;
       }
     }
     
-    .container-3 {
+    &__container-mobile {
       display: flex;
 
       .hamburguer-label {

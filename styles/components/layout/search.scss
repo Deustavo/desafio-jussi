@@ -26,6 +26,10 @@
     padding: 6px 0px;
     z-index: 2;
 
+    &::placeholder {
+      color: var(--pink-jussi);
+    }
+
     &:focus,
     &:not([value=""]){
       &~ .placeholder {
@@ -41,6 +45,16 @@
   &:hover {
     .dinamic-border-input {
       border: 1px solid var(--pink-jussi);
+    }
+  }
+
+  
+  .link-icon {
+    margin: 0 !important;
+    z-index: 3;
+    transition: ease-in-out all 300ms;
+    &:hover {
+      filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(-400deg) brightness(119%) contrast(119%);
     }
   }
 }

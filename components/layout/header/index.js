@@ -24,8 +24,8 @@ export default function Header() {
   }, [])
 
   return<>
-    <section id="layout-header">
-      <div className="container-1">
+    <section id="layout-header" className="layout-header">
+      <div className="layout-header__container-left">
         <Link href="/"> 
           <a>
             <Image src="/images/layout/logo-jussi.png" alt="logo-jussi" height={36} width={164}/>
@@ -38,14 +38,14 @@ export default function Header() {
           <a className="paragraph hide-mobile">Conheça a Jüssi</a>
         </Link>
       </div>
-      <div className="container-2 hide-mobile">
+      <div className="layout-header__container-right hide-mobile">
         <Search />
         <Link href="/">
           <a className="paragraph">Login</a>
         </Link>
         <Image src="/icons/shopping-cart.svg" alt="cart" height={24} width={24}/>
       </div>
-      <div className="container-3">
+      <div className="layout-header__container-mobile">
         <Image src="/icons/search.svg" alt="search" height={24} width={24}/>
         <Hamburguer />
       </div>
