@@ -11,7 +11,7 @@ yarn
 ```
 yarn dev
 ```
-<br /><br />
+<br />
 
 ## Case
 Desenvolver um e-commerce baseado em um [Figma](https://www.figma.com/file/O9AEeYB6ZWyMTZzMZhvjaY/loja-vtex-jussi?node-id=0%3A1) que cumpra as seguintes promissas:
